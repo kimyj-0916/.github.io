@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>사진 링크</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: sans-serif;
+      background-color: #f0f0f0;
+      text-align: center;
+    }
+    .image-links {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+    .image-links img {
+      max-width: 100%;
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .image-links img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <h2>이미지를 클릭하면 사연 접수 링크로 이동합니다</h2>
+  <div class="image-links">
+    <a href="https://forms.gle/wAiQrPLFjbWcL5LR6" target="_blank">
+      <img src="https://ifh.cc/g/LKdJBA.jpg" alt="이미지1">
+    </a>
+  </div>
+
+</body>
+</html>
